@@ -76,6 +76,12 @@ const playerHasWon = () => {
             return true;
         }
     }
+	if(spaces[6] === currentPlayer) {
+        if(spaces[4] === currentPlayer & spaces[2] === currentPlayer) {
+            console.log(`${currentPlayer} wins diagonally`);
+            return true;
+        }
+    }
 }
 
 const restart = () => {
